@@ -1,11 +1,12 @@
 {
   "name": "backend-desafio",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.ts",
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "dev": "ts-node-dev --inspect --transpileOnly --ignore-watch node_modules src/server.ts"
+    "dev": "ts-node-dev --inspect --transpileOnly --ignore-watch node_modules src/server.ts",
+    "typeorm": "node --require ts-node/register ./node_modules/typeorm/cli.js"
   },
   "devDependencies": {
     "@types/express": "^4.17.5",
